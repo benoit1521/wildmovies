@@ -19,6 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/addmovie', function(){
-
-});
+Route::get('/addmovie', 'MovieController@add')->name('add');
