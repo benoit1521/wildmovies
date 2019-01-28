@@ -19,6 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/addmovie', 'MovieController@add')->name('add');
+Route::get('/addmovie', 'MovieController@show')->name('add');
 
-Route::post('/addmovie', 'MovieController@add')->name('add');
+Route::post('/addmovie', 'MovieController@add')->name('confirmation');
+
+// route::get('/confirmation', function() {
+//     return view ('confirmation');
+// });

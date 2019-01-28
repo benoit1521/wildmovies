@@ -13,6 +13,11 @@ class MovieController extends Controller
         $this->middleware('auth');
     }
 
+    public function show()
+    {
+        return view('add');
+    }
+
     public function add()
     {
         $userId = Auth::user() -> id;
@@ -26,7 +31,7 @@ class MovieController extends Controller
         $movie -> poster = request('poster');
         $movie -> save();
 
-        return view('add');
+        return view('confirmation');
     }
 
 }

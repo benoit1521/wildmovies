@@ -8,7 +8,7 @@
                 <div class="card-header">Ajout d'un nouveau film</div>
                 <div class="card-body">
 
-                    <form action="{{route('add')}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('add') }}" method="POST" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">Titre</label>
