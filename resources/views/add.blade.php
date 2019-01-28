@@ -27,7 +27,7 @@
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">Année de sortie</label>
                             <div class="col-md-6">
-                                <input type="text" name="release_date" class="form-control ">
+                                <input type="number" name="release_date" class="form-control ">
                             </div>
                         </div>
                         <div class="form-group row">
