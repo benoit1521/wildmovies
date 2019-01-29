@@ -6,7 +6,7 @@
     <h1>Vous avez ajouté un nouveau film !</h1>
     <div class="card" style="width: 18rem;">
 
-        <!-- <img src={{$movie->poster}} class="card-img-top" alt="photoWilder"> -->
+        <img src={{$movie->poster}} class="card-img-top" alt="photoWilder">
 
         <div class="card-body">
             <h5 class="card-title">{{$movie->title}} </h5>
@@ -18,7 +18,7 @@
 
     </div>
 
-    <a href="{{route('add')}}">Ajouter un nouvel utilisateur</a>
+    <a href="{{route('add')}}">Ajouter un nouveau film</a>
 </div>
 
 @endsection

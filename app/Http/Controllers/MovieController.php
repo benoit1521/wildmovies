@@ -31,7 +31,9 @@ class MovieController extends Controller
         $movie -> poster = request('poster');
         $movie -> save();
 
-        return view('confirmation');
+        return view('confirmation', [
+            'movie' => $movie,
+        ]);
     }
 
 }

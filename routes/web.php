@@ -23,6 +23,3 @@ Route::get('/addmovie', 'MovieController@show')->name('add');
 
 Route::post('/addmovie', 'MovieController@add')->name('confirmation');
 
-// route::get('/confirmation', function() {
-//     return view ('confirmation');
-// });
