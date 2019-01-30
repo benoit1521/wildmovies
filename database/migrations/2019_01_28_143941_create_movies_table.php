@@ -14,8 +14,8 @@ class CreateMoviesTable extends Migration
     public function up()
     {
         Schema::create('movies', function (Blueprint $table) {
-            $table->unsignedInteger('user_id'); 
             $table->increments('id');
+            $table->unsignedInteger('user_id'); 
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('title');
             $table->string('director');
