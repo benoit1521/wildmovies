@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth; 
 use App;
+use App\Movies;
 
 class MovieController extends Controller
 {
@@ -35,5 +36,12 @@ class MovieController extends Controller
             'movie' => $movie,
         ]);
     }
-
+    public function index()
+    {
+        $movies = Movies::all();
+        
+        return view('moviesList', [
+            'movies' => $movies,
+        ]);
+    }
 }
