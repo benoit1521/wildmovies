@@ -38,7 +38,10 @@ class MovieController extends Controller
     }
     public function index()
     {
-        $movies = Movies::all();
+        $userId = Auth::user() -> id;
+
+        $movies = Movies::where('user_id', $userId)
+            ->get();
         
         return view('moviesList', [
             'movies' => $movies,

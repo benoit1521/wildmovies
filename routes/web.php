@@ -23,4 +23,4 @@ Route::get('/addmovie', 'MovieController@show')->name('add');
 
 Route::post('/addmovie', 'MovieController@add')->name('confirmation');
 
-Route::get('/mymovies', 'MovieController@index')->name('movielist');
+Route::get('/mymovies', 'MovieController@index')->name('moviesList');
