@@ -23,6 +23,9 @@
         <div class="col-md-8">
             <a href="{{route('add')}}" class="btn btn-outline-primary mt-3">Ajouter un nouveau film à Wildmovies</a>
         </div>
+        <div class="col-md-8">
+            <a href="{{route('add')}}" class="btn btn-outline-primary mt-3">Ma liste de films</a>
+        </div>
     </div>
 </div>
 @endsection
