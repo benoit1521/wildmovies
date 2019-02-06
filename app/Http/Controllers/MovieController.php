@@ -14,13 +14,18 @@ class MovieController extends Controller
         $this->middleware('auth');
     }
 
-    public function show()
+    public function show(request $request)
     {
+        $request->user()->authorizeRoles('admin');
+
+
         return view('add');
     }
 
-    public function add()
+    public function add(Request $request)
     {
+        
+
         $userId = Auth::user() -> id;
 
         $movie = new App\Movies;
